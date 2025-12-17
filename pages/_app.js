@@ -7,7 +7,7 @@ import About from "../components/About";
 import Expertise from "../components/Expertise";
 import Consult from "../components/Consult";
 import Resume from "../components/Resume";
-import Education from "../components/Resume";
+import Education from "../components/Education";
 import TextBook from "../components/Textbook";
 import Publications from "../components/Publications";
 import Contact from "../components/Contact";
