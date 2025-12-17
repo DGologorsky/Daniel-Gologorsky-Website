@@ -127,13 +127,6 @@ function MyApp({ Component, pageProps }) {
                   <section className="service">
                     <Expertise />
                   </section>
-                  <section className="consult">
-                    <Consult />
-                  </section>
-                  <section className="resume">
-                    <Resume />
-                  </section>
-
                 </article>
 
                 <article className="education" data-page="education">
