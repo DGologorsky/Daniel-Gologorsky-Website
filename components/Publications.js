@@ -109,7 +109,7 @@ export default function Publications() {
 
                     <li>
                     17. Schefler AC, <strong>Gologorsky D</strong> , Marr BP, Shields CL,
-                    Zeolite I, Abramson DH. Extraocular Metastases of Choroidal Melanoma
+                    Abramson DH. Extraocular Metastases of Choroidal Melanoma
                     After Invasive Diagnostic Evaluation. JAMA Ophthalmol. 2013
                     Sep;131(9):1220-42
                     </li>
@@ -235,7 +235,7 @@ export default function Publications() {
 		<div className="col-md-12">
 			<ol className="chapter-list">
 				<li>
-				1. Mehta N, <strong>Gologorsky D</strong> . Fluorescein Angiography&#34; In:
+				1. Mehta N, <strong>Gologorsky D</strong> . Ocular Angiography&#34; In:
 				Retinal Imaging and Diagnostics. Lee J and Rosen RB (eds). Springer
 				International Publishing Switzerland,
 				</li>
