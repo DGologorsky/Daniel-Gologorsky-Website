@@ -39,22 +39,26 @@ window.addEventListener("DOMContentLoaded", (event) => {
   }
 
   // add event to all nav link
-  for (let i = 0; i < navigationLinks.length; i++) {
-    navigationLinks[i].addEventListener("click", function () {
+  navigationLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+      const targetPage = this.dataset.pageTarget;
 
-      for (let i = 0; i < pages.length; i++) {
-        if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-          pages[i].classList.add("active");
-          navigationLinks[i].classList.add("active");
+      if (!targetPage) return;
+
+      pages.forEach((page) => {
+        const isActive = page.dataset.page === targetPage;
+        page.classList.toggle("active", isActive);
+        if (isActive) {
           window.scrollTo(0, 0);
-        } else {
-          pages[i].classList.remove("active");
-          navigationLinks[i].classList.remove("active");
         }
-      }
+      });
 
+      navigationLinks.forEach((navLink) => {
+        const navTarget = navLink.dataset.pageTarget;
+        navLink.classList.toggle("active", navTarget === targetPage);
+      });
     });
-  }
+  });
 });
 
 

@@ -85,44 +85,44 @@ function MyApp({ Component, pageProps }) {
                 <nav className="navbar">
                   <ul className="navbar-list">
                     <li className="navbar-item">
-                      <button aria-label='nav-our practise' className="navbar-link active" data-nav-link>
+                      <button aria-label='nav-our-practice' className="navbar-link active" data-nav-link data-page-target="our-practice">
                         Our Practice
                       </button>
                     </li>
 
                     <li className="navbar-item">
-                      <button aria-label='nav-resume' className="navbar-link" data-nav-link>
+                      <button aria-label='nav-education' className="navbar-link" data-nav-link data-page-target="education">
                         Education
                       </button>
                     </li>
 
                     <li className="navbar-item">
-                      <button aria-label='nav-textbook' className="navbar-link" data-nav-link>
+                      <button aria-label='nav-textbook' className="navbar-link" data-nav-link data-page-target="textbook">
                         Textbook
                       </button>
                     </li>
 
                     <li className="navbar-item">
-                      <button aria-label='nav-pub' className="navbar-link" data-nav-link>
+                      <button aria-label='nav-pub' className="navbar-link" data-nav-link data-page-target="publications">
                         Publications
                       </button>
                     </li>
 
                     <li className="navbar-item">
-                      <button aria-label='nav-blog' className="navbar-link" data-nav-link>
+                      <button aria-label='nav-blog' className="navbar-link" data-nav-link data-page-target="blog">
                         Blog
                       </button>
                     </li>
 
                     <li className="navbar-item">
-                      <button aria-label='nav-contact' className="navbar-link" data-nav-link>
+                      <button aria-label='nav-contact' className="navbar-link" data-nav-link data-page-target="contact">
                         Contact
                       </button>
                     </li>
                   </ul>
                 </nav>
 
-                <article className="our practise active" data-page="our practise">
+                <article className="our-practice active" data-page="our-practice">
                   <About />
                   <section className="service">
                     <Expertise />
@@ -133,18 +133,18 @@ function MyApp({ Component, pageProps }) {
                   <section className="resume">
                     <Resume />
                   </section>
-              
+
                 </article>
 
-                {/* <article className="resume" data-page="resume">
-                  <Resume />
-                </article> */}
+                <article className="education" data-page="education">
+                  <Education />
+                </article>
 
-                <article className="textbook" data-page="book">
+                <article className="textbook" data-page="textbook">
                   <TextBook />
                 </article>
 
-                <article className="publicians" data-page="publications">
+                <article className="publications" data-page="publications">
                   <Publications />
                 </article>
 

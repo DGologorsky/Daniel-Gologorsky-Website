@@ -629,10 +629,13 @@ main {
 }
 
 .timeline-text {
-  display: ruby-text;
+  display: block;
   color: var(--blockquote-text-color);
   font-weight: var(--fw-300);
   line-height: 1.6;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 
