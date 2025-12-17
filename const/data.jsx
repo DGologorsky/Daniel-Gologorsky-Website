@@ -1,12 +1,8 @@
 
 export const education = [
     {
-    college: "New York Eye & Ear Infirmary",
-    study: "Fellowship in diseases of the Retina and Vitreous"
-    },
-    {
-    college: "Bascom Palmer Eye Institute",
-    study: "Ophthalmology residency. The <a target='_blank' className='show-link' href='https://umiamihealth.org/en/Bascom-Palmer-Eye-Institute/About-Bascom-Palmer/US-News-Ranking'>US News &amp; World Report</a> ranks Bascom Palmer Eye Institute as the #1 Ophthalmology hospital and research center for the 23rd consecutive year."
+    college: "Cornell University (BA)",
+    study: "Chemistry & Chemical Biology major. Graduated magna cum laude, Phi Beta Kappa, 4.0 GPA."
     },
     {
     college: "Dartmouth Medical School (MD)",
@@ -17,10 +13,13 @@ export const education = [
     study: 'Focusing on healthcare delivery and operations management.'
     },
     {
-    college: "Cornell University (BA)",
-    study: "Chemistry & Chemical Biology major. Graduated magna cum laude, Phi Beta Kappa, 4.0 GPA."
+    college: "Bascom Palmer Eye Institute",
+    study: "Ophthalmology residency. The <a target='_blank' className='show-link' href='https://umiamihealth.org/en/Bascom-Palmer-Eye-Institute/About-Bascom-Palmer/US-News-Ranking'>US News &amp; World Report</a> ranks Bascom Palmer Eye Institute as the #1 Ophthalmology hospital and research center for the 23rd consecutive year."
     },
-    
+    {
+    college: "New York Eye & Ear Infirmary",
+    study: "Fellowship in diseases of the Retina and Vitreous"
+    },
 ]
 
 export const awards = [
