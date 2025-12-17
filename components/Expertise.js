@@ -11,16 +11,6 @@ export default function Expertise() {
                     <div className="about-desc">
                     We offer expert medical and surgical treatments for the following conditions:
                             <div className="expertise-table grid grid-cols-3 gap-y-1">
-
-                                // Original Developer
-                                // <div className="d-flex items-center"><span><RxDotFilled /></span>Annual Eye Exams</div>
-                                // <div className="d-flex items-center"><span><RxDotFilled /></span>Diabetic Retinopathy</div>
-                                // <div className="d-flex items-center"><span><RxDotFilled /></span>Macular Degeneration</div>
-                                // <div className="d-flex items-center"><span><RxDotFilled /></span>Glaucoma</div>
-                                // <div className="d-flex items-center"><span><RxDotFilled /></span>Dry Eye</div>
-                                // <div className="d-flex items-center"><span><RxDotFilled /></span>Cataract</div>
-
-                                // Rachel added
                                 <div className="d-flex items-center"><span><RxDotFilled /></span>Annual Eye Exams</div>
                                 <div className="d-flex items-center"><span><RxDotFilled /></span>Diabetic Retinopathy</div>
                                 <div className="d-flex items-center"><span><RxDotFilled /></span>Macular Degeneration</div>
