@@ -6,7 +6,7 @@ export const education = [
     },
     {
     college: "Bascom Palmer Eye Institute",
-    study: "Ophthalmology residency. The <a target='_blank' className='show-link' href='https://umiamihealth.org/en/Bascom-Palmer-Eye-Institute/About-Bascom-Palmer/US-News-Ranking'> US News &amp; World Report </a> ranks Bascom Palmer Eye Institute as the #1 Ophthalmology hospital and research center for the 23rd consecutive year."
+    study: "Ophthalmology residency. The <a target='_blank' className='show-link' href='https://umiamihealth.org/en/Bascom-Palmer-Eye-Institute/About-Bascom-Palmer/US-News-Ranking'>US News &amp; World Report</a> ranks Bascom Palmer Eye Institute as the #1 Ophthalmology hospital and research center for the 23rd consecutive year."
     },
     {
     college: "Dartmouth Medical School (MD)",

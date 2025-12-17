@@ -565,6 +565,7 @@ main {
 .show-link {
     color: #126AF7;;
     text-decoration: underline;
+    display: inline;
 }
 
 .article-title { margin-bottom: 30px; }
@@ -586,6 +587,7 @@ main {
 .timeline-list {
   font-size: var(--fs-4);
   margin-left: 45px;
+  max-width: 100%;
 }
 
 .timeline-item { position: relative; }
@@ -633,9 +635,10 @@ main {
   color: var(--blockquote-text-color);
   font-weight: var(--fw-300);
   line-height: 1.6;
+  max-width: 100%;
   white-space: normal;
-  word-break: break-word;
-  overflow-wrap: anywhere;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 
 
