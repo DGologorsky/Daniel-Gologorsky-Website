@@ -11,12 +11,35 @@ export default function Expertise() {
                     <div className="about-desc">
                     We offer expert medical and surgical treatments for the following conditions:
                             <div className="expertise-table grid grid-cols-3 gap-y-1">
+
+                                // Original Developer
+                                // <div className="d-flex items-center"><span><RxDotFilled /></span>Annual Eye Exams</div>
+                                // <div className="d-flex items-center"><span><RxDotFilled /></span>Diabetic Retinopathy</div>
+                                // <div className="d-flex items-center"><span><RxDotFilled /></span>Macular Degeneration</div>
+                                // <div className="d-flex items-center"><span><RxDotFilled /></span>Glaucoma</div>
+                                // <div className="d-flex items-center"><span><RxDotFilled /></span>Dry Eye</div>
+                                // <div className="d-flex items-center"><span><RxDotFilled /></span>Cataract</div>
+
+                                // Rachel added
                                 <div className="d-flex items-center"><span><RxDotFilled /></span>Annual Eye Exams</div>
                                 <div className="d-flex items-center"><span><RxDotFilled /></span>Diabetic Retinopathy</div>
                                 <div className="d-flex items-center"><span><RxDotFilled /></span>Macular Degeneration</div>
                                 <div className="d-flex items-center"><span><RxDotFilled /></span>Glaucoma</div>
                                 <div className="d-flex items-center"><span><RxDotFilled /></span>Dry Eye</div>
                                 <div className="d-flex items-center"><span><RxDotFilled /></span>Cataract</div>
+                                <div className="d-flex items-center"><span><RxDotFilled /></span>HIV Retinopathy</div>
+                                <div className="d-flex items-center"><span><RxDotFilled /></span>Retinal tears / detachments</div>
+                                <div className="d-flex items-center"><span><RxDotFilled /></span>Blepharitis</div>
+                                <div className="d-flex items-center"><span><RxDotFilled /></span>Presbyopia</div>
+                                <div className="d-flex items-center"><span><RxDotFilled /></span>HCQ Screening</div>
+                                <div className="d-flex items-center"><span><RxDotFilled /></span>Macular Edema</div>
+                                <div className="d-flex items-center"><span><RxDotFilled /></span>Vascular Disease</div>
+                                <div className="d-flex items-center"><span><RxDotFilled /></span>Vitreous Hemorrhage</div>
+                                <div className="d-flex items-center"><span><RxDotFilled /></span>Uveitis</div>
+                                <div className="d-flex items-center"><span><RxDotFilled /></span>Optic Neuropathy</div>
+                                <div className="d-flex items-center"><span><RxDotFilled /></span>Chalazion / Stye</div>
+                                <div className="d-flex items-center"><span><RxDotFilled /></span>Trauma</div>
+                            
                             </div>
                     </div>
                 </div>
