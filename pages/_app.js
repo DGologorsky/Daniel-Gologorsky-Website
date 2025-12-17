@@ -85,19 +85,19 @@ function MyApp({ Component, pageProps }) {
                   <ul className="navbar-list">
                     <li className="navbar-item">
                       <button aria-label='nav-our practise' className="navbar-link active" data-nav-link>
-                        Our Practise
+                        Our Practice
                       </button>
                     </li>
 
-                    {/* <li className="navbar-item">
+                    <li className="navbar-item">
                       <button aria-label='nav-resume' className="navbar-link" data-nav-link>
-                        Resume
+                        Education
                       </button>
-                    </li> */}
+                    </li>
 
                     <li className="navbar-item">
                       <button aria-label='nav-textbook' className="navbar-link" data-nav-link>
-                        Book
+                        Textbook
                       </button>
                     </li>
 
