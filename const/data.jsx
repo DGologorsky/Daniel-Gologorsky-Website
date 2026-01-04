@@ -9,6 +9,10 @@ export const education = [
     study: "Multiple awards for clinical excellence and medical research."
     },
     {
+    college: "Dartmouth Medical School",
+    study: "Internship in Internal Medicine at Dartmouth-Hitchcock Medical Center."
+    },
+    {
     college: "Tuck School of Business at Dartmouth (MBA)",
     study: 'Focusing on healthcare delivery and operations management.'
     },
