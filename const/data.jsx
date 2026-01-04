@@ -70,14 +70,6 @@ export const affiliations = [
     name: "American Society of Retina Specialists (ASRS)",
     desc: "Member"
     },
-    {
-    name: "American Medical Association (AMA)",
-    desc: "Member"
-    },
-    {
-    name: "Florida Society of Ophthalmology (FSO)",
-    desc: "Member"
-    },
 ]
 
 export const avatar_url = '/assets/img/sample/daniel-gologorsky.webp'
