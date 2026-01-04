@@ -1,7 +1,7 @@
 
 import { education, affiliations } from "../const/data";
 import { IoBookSharp } from "react-icons/io5";
-import { FaUserFriends } from "react-icons/fa";
+import { GiTrophyCup } from "react-icons/gi";
 import parse from 'html-react-parser';
 
 export default function Education() {
@@ -34,7 +34,7 @@ export default function Education() {
 
             <div className="title-wrapper">
             <div className="icon-box">
-                <FaUserFriends />
+                <GiTrophyCup />
 
             </div>
 
