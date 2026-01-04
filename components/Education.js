@@ -1,7 +1,7 @@
 
-import { education, awards } from "../const/data";
+import { education, affiliations } from "../const/data";
 import { IoBookSharp } from "react-icons/io5";
-import { GiTrophyCup } from "react-icons/gi";
+import { FaUserFriends } from "react-icons/fa";
 import parse from 'html-react-parser';
 
 export default function Education() {
@@ -34,17 +34,18 @@ export default function Education() {
 
             <div className="title-wrapper">
             <div className="icon-box">
-                <GiTrophyCup />
+                <FaUserFriends />
 
             </div>
 
-            <h3 className="colorlib-heading">Awards</h3>
+            <h3 className="colorlib-heading">Professional Affiliations</h3>
             </div>
 
             <ol className="timeline-list">
-                { awards.map((item,index) => <li className="timeline-item" key={index}>
+                { affiliations.map((item,index) => <li className="timeline-item" key={index}>
                     <h4 className="h4 timeline-item-title">{item.name}</h4>
-                    <p className="timeline-text"> {item.desc} </p></li>)
+                    {item.desc && <p className="timeline-text"> {item.desc} </p>}
+                    </li>)
                 }
             </ol>
 

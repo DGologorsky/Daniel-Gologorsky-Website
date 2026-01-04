@@ -59,7 +59,25 @@ export const awards = [
     name: "Valedictorian",
     desc: "RASGH Academy"
     },
-    
+]
+
+export const affiliations = [
+    {
+    name: "American Academy of Ophthalmology (AAO)",
+    desc: "Member"
+    },
+    {
+    name: "American Society of Retina Specialists (ASRS)",
+    desc: "Member"
+    },
+    {
+    name: "American Medical Association (AMA)",
+    desc: "Member"
+    },
+    {
+    name: "Florida Society of Ophthalmology (FSO)",
+    desc: "Member"
+    },
 ]
 
 export const avatar_url = '/assets/img/sample/daniel-gologorsky.webp'
