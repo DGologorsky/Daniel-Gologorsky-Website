@@ -38,25 +38,33 @@ window.addEventListener("DOMContentLoaded", (event) => {
     });
   }
 
+  const activatePage = (targetPage) => {
+    if (!targetPage) return;
+
+    pages.forEach((page) => {
+      const isActive = page.dataset.page === targetPage;
+      page.classList.toggle("active", isActive);
+      if (isActive) {
+        window.scrollTo(0, 0);
+      }
+    });
+
+    navigationLinks.forEach((navLink) => {
+      const navTarget = navLink.dataset.pageTarget;
+      navLink.classList.toggle("active", navTarget === targetPage);
+    });
+  };
+
+  // Ensure the blog section is active when loading a blog post route
+  const currentPath = window.location.pathname;
+  if (currentPath.startsWith("/posts")) {
+    activatePage("blog");
+  }
+
   // add event to all nav link
   navigationLinks.forEach((link) => {
     link.addEventListener("click", function () {
-      const targetPage = this.dataset.pageTarget;
-
-      if (!targetPage) return;
-
-      pages.forEach((page) => {
-        const isActive = page.dataset.page === targetPage;
-        page.classList.toggle("active", isActive);
-        if (isActive) {
-          window.scrollTo(0, 0);
-        }
-      });
-
-      navigationLinks.forEach((navLink) => {
-        const navTarget = navLink.dataset.pageTarget;
-        navLink.classList.toggle("active", navTarget === targetPage);
-      });
+      activatePage(this.dataset.pageTarget);
     });
   });
 });
