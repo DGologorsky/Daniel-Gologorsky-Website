@@ -12,32 +12,40 @@ import siteMetadata from "../utils/siteMetaData";
 export default function Home({ posts }) {
   const [matches, setMatches] = useState(null);
   const { lang } = useContext(Lang_Mode);
-  const [ postsbylang, setPosts ] = useState(posts);
+  const [postsbylang, setPosts] = useState(posts);
 
   useEffect(() => {
-      switch (lang) {
-        case 'Es':
-          setPosts(posts.filter((post, index) => {
+    switch (lang) {
+      case "Es":
+        setPosts(
+          posts.filter((post, index) => {
             return index > 4 && index < 7;
-          }));
-          break;
-        case 'He':
-          setPosts(posts.filter((post, index) => {
+          })
+        );
+        break;
+      case "He":
+        setPosts(
+          posts.filter((post, index) => {
             return index > 6 && index < 9;
-          }));
-          break;
-        case 'Ru':
-          setPosts(posts.filter((post, index) => {
+          })
+        );
+        break;
+      case "Ru":
+        setPosts(
+          posts.filter((post, index) => {
             return index > 8 && index < 11;
-          }));
-          break;
-        default:
-          setPosts(posts.filter((post, index) => {
+          })
+        );
+        break;
+      default:
+        setPosts(
+          posts.filter((post, index) => {
             return index < 5;
-          }));
-          break;
-      }
-    }, [lang]);
+          })
+        );
+        break;
+    }
+  }, [lang, posts]);
   return (
     <div>
       <Head>
@@ -59,22 +67,22 @@ export default function Home({ posts }) {
       </header>
       
       <Searchbar posts={postsbylang} setMatches={setMatches} />
-	  /*
-      <div className="new-blog-urls mt-3 p-4">
-        <ul>
-          <li className="list-disc">
-            <a href={siteMetadata.newlink1} target="_blank" className="new-blog-link" rel="noreferrer" aria-label='daniel-new-link1'>
-              <p>American Academy of Ophthalmology and North American Neuro-Ophthalmology Society Issue Advice on Weight Loss Drug and Eye Health</p>
-            </a>
-          </li>
-          <li className="list-disc">
-            <a href={siteMetadata.newlink2} target="_blank" className="new-blog-link" rel="noreferrer" aria-label='daniel-new-link2'>
-              <p>Risk of Nonarteritic Anterior Ischemic Optic Neuropathy in Patients Prescribed Semaglutide</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-	  */
+      {/**
+       * <div className="new-blog-urls mt-3 p-4">
+       *   <ul>
+       *     <li className="list-disc">
+       *       <a href={siteMetadata.newlink1} target="_blank" className="new-blog-link" rel="noreferrer" aria-label='daniel-new-link1'>
+       *         <p>American Academy of Ophthalmology and North American Neuro-Ophthalmology Society Issue Advice on Weight Loss Drug and Eye Health</p>
+       *       </a>
+       *     </li>
+       *     <li className="list-disc">
+       *       <a href={siteMetadata.newlink2} target="_blank" className="new-blog-link" rel="noreferrer" aria-label='daniel-new-link2'>
+       *         <p>Risk of Nonarteritic Anterior Ischemic Optic Neuropathy in Patients Prescribed Semaglutide</p>
+       *       </a>
+       *     </li>
+       *   </ul>
+       * </div>
+       */}
       <div className="blog-posts-list grid grid-cols-1 md:grid-cols-2 gap-8">
         {matches
           ? matches.map((post, index) => <Post key={index} post={post} />)
