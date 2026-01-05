@@ -641,6 +641,49 @@ main {
   overflow-wrap: break-word;
 }
 
+.affiliations-marquee {
+  position: relative;
+  overflow: hidden;
+  margin-top: 40px;
+  padding: 18px 0;
+  border-radius: 12px;
+  background: #1f2733;
+  box-shadow: var(--shadow-1);
+}
+
+.affiliations-marquee__track {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  width: max-content;
+  animation: affiliation-scroll 26s linear infinite;
+}
+
+.affiliations-marquee__logo {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  min-width: 180px;
+}
+
+.affiliations-marquee__logo img {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.35));
+}
+
+@keyframes affiliation-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 
 /*-----------------------------------*\
   #BLOG
