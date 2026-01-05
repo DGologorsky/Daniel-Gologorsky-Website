@@ -21,10 +21,11 @@ export default function TextBook() {
 					</div>
 				<div className="row">
 					<div className="col-md-12 text-center text-desc">
-						<p>Gologorsky D, Rosen RB. \n
+						<p>Gologorsky D, Rosen RB. <br />
 							<a className="show-link" target="_blank" rel="noopener noreferrer" href={siteMetadata.textbook}z>
-								<i>Principles of Ocular Imaging.</i> \n
+								<i>Principles of Ocular Imaging.</i> 
 							</a> 
+							<br />
 							Thorofare, NJ: SLACK, Inc.; 2021. 
 						</p>
 					</div>
