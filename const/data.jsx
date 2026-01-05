@@ -63,12 +63,12 @@ export const awards = [
 
 export const affiliations = [
     {
-    name: "American Academy of Ophthalmology (AAO)",
-    desc: "Member"
+    name: "American Academy of Ophthalmology (AAO)"
+    // desc: "Member"
     },
     {
-    name: "American Society of Retina Specialists (ASRS)",
-    desc: "Member"
+    name: "American Society of Retina Specialists (ASRS)"
+    // desc: "Member"
     },
 ]
 
