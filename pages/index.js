@@ -59,6 +59,7 @@ export default function Home({ posts }) {
       </header>
       
       <Searchbar posts={postsbylang} setMatches={setMatches} />
+	  /*
       <div className="new-blog-urls mt-3 p-4">
         <ul>
           <li className="list-disc">
@@ -73,6 +74,7 @@ export default function Home({ posts }) {
           </li>
         </ul>
       </div>
+	  */
       <div className="blog-posts-list grid grid-cols-1 md:grid-cols-2 gap-8">
         {matches
           ? matches.map((post, index) => <Post key={index} post={post} />)
