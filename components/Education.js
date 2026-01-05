@@ -4,6 +4,29 @@ import { IoBookSharp } from "react-icons/io5";
 import { GiTrophyCup } from "react-icons/gi";
 import parse from 'html-react-parser';
 
+const educationLogos = [
+  {
+    src: "/assets/img/asrs.png",
+    alt: "American Society of Retina Specialists",
+  },
+  {
+    src: "/assets/img/academy.png",
+    alt: "American Academy of Ophthalmology",
+  },
+  {
+    src: "/assets/img/cornell.jpg",
+    alt: "Cornell University",
+  },
+  {
+    src: "/assets/img/bascom.png",
+    alt: "Bascom Palmer Eye Institute",
+  },
+  {
+    src: "/assets/img/dart.png",
+    alt: "Dartmouth College",
+  },
+];
+
 export default function Education() {
     return (
       <div>
@@ -50,7 +73,17 @@ export default function Education() {
             </ol>
 
         </section>
+
+        <section className="affiliations-marquee" aria-label="Educational affiliations">
+          <div className="affiliations-marquee__track">
+            {[...educationLogos, ...educationLogos].map((logo, index) => (
+              <div className="affiliations-marquee__logo" key={`${logo.alt}-${index}`}>
+                <img src={logo.src} alt={logo.alt} loading="lazy" />
+              </div>
+            ))}
+          </div>
+        </section>
       </div>
-    
+
   )
 }
