@@ -21,9 +21,9 @@ export default function TextBook() {
 					</div>
 				<div className="row">
 					<div className="col-md-12 text-center text-desc">
-						<p>Gologorsky D, Rosen RB. 
+						<p>Gologorsky D, Rosen RB. \n
 							<a className="show-link" target="_blank" rel="noopener noreferrer" href={siteMetadata.textbook}z>
-								<i>Principles of Ocular Imaging.</i>
+								<i>Principles of Ocular Imaging.</i> \n
 							</a> 
 							Thorofare, NJ: SLACK, Inc.; 2021. 
 						</p>
