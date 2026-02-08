@@ -146,7 +146,7 @@ button:focus {
 .floating-call-button {
   position: fixed;
   right: 20px;
-  bottom: 20px;
+  bottom: 60px;
   width: 56px;
   height: 56px;
   border-radius: 50%;
@@ -873,8 +873,5 @@ textarea.form-input::-webkit-resizer { display: none; }
   pointer-events: auto;
   cursor: not-allowed;
 }
-
-
-
 
 
