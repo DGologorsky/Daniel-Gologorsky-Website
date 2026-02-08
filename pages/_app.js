@@ -12,6 +12,7 @@ import TextBook from "../components/Textbook";
 import Publications from "../components/Publications";
 import Contact from "../components/Contact";
 import siteMetadata from '../utils/siteMetaData';
+import { FaPhoneAlt } from 'react-icons/fa';
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../styles/responsive.scss';
 import "highlight.js/styles/atom-one-dark.css";
@@ -81,6 +82,13 @@ function MyApp({ Component, pageProps }) {
             }}
             />
             <Sidebar />
+            <a
+              className="floating-call-button"
+              href="tel:3059023200"
+              aria-label="Call 305-902-3200"
+            >
+              <FaPhoneAlt aria-hidden="true" focusable="false" />
+            </a>
             <div className="main-content" id="main-wrapper">
                 <nav className="navbar">
                   <ul className="navbar-list">
