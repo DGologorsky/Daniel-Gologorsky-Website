@@ -143,6 +143,34 @@ button:focus {
   
 }
 
+.floating-call-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #126AF7;
+  color: #fff;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-2);
+  z-index: 1000;
+  transition: transform var(--transition-1), box-shadow var(--transition-1);
+}
+
+.floating-call-button svg {
+  width: 22px;
+  height: 22px;
+}
+
+.floating-call-button:hover,
+.floating-call-button:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-3);
+}
+
 @keyframes pulse-animation {
   0% {
     box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
@@ -845,7 +873,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   pointer-events: auto;
   cursor: not-allowed;
 }
-
 
 
 
