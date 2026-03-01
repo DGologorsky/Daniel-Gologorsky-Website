@@ -6,7 +6,7 @@ const siteMetadata = {
     description: 'Daniel Gologorsky, MD, MBA is an Ophthalmologist and Retina specialist who takes care of patients with diabetic retinopathy, macular degeneration and more.',
     language: 'en-us',
     theme: 'system', // system, dark or light
-    siteUrl: 'https://danielblog3.vercel.app', // your website URL
+    siteUrl: 'https://www.danielgologorsky.com', // your website URL
     siteLogo: '/favicon.ico',
     socialBanner: '/assets/img/sample/daniel-gologorsky.webp', // add social banner in the public folder
     email: 'support@miamiretina.com', 
