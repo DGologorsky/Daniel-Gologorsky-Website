@@ -1,4 +1,5 @@
 import { NextSeo } from 'next-seo';
+import Script from 'next/script';
 import Context from "../context/context"
 
 import Sidebar from "../components/Sidebar";
@@ -53,6 +54,18 @@ import "highlight.js/styles/atom-one-dark.css";
 function MyApp({ Component, pageProps }) {
   return (
     <>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-618975445"
+        strategy="afterInteractive"
+      />
+      <Script id="google-ads-gtag" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-618975445');
+        `}
+      </Script>
       <Context>
         <main>
           {/* <div className="d-flex flex-column">
