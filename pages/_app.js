@@ -1,5 +1,6 @@
 import { NextSeo } from 'next-seo';
 import Script from 'next/script';
+import { useRouter } from 'next/router';
 import Context from "../context/context"
 
 import Sidebar from "../components/Sidebar";
@@ -52,6 +53,11 @@ import "highlight.js/styles/atom-one-dark.css";
 
 
 function MyApp({ Component, pageProps }) {
+  const { asPath } = useRouter();
+  const baseUrl = siteMetadata.siteUrl.replace(/\/$/, '');
+  const pathname = asPath ? asPath.split('#')[0].split('?')[0] : '/';
+  const canonicalUrl = pathname === '/' ? `${baseUrl}/` : `${baseUrl}${pathname}`;
+
   return (
     <>
       <Script
@@ -75,8 +81,9 @@ function MyApp({ Component, pageProps }) {
            <NextSeo
             title = {siteMetadata.title}
             description = {siteMetadata.description}
+            canonical={canonicalUrl}
             openGraph={{
-              url: siteMetadata.siteUrl,
+              url: canonicalUrl,
               title: siteMetadata.title,
               description: siteMetadata.description,
               images: [siteMetadata.socialBanner],
